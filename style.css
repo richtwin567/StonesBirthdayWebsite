@@ -1,0 +1,144 @@
+/* CSS files add styling rules to your content */
+
+/* Palette
+
+light blue: #52E2EF
+magenta: #FF367C
+navy blue: #423555
+darker navy blue: #312840
+light gray: #F2F2F2
+white: #FFFFFF
+
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+/*
+font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  line-height: 1.618;
+}
+
+body {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.background {
+  width: 100%;
+  background-image: url("https://cdn.glitch.com/91942178-97c0-4cd1-9504-ebdf2c2f2537%2FtopLeft.svg?v=1584320714851"),
+    url("https://cdn.glitch.com/91942178-97c0-4cd1-9504-ebdf2c2f2537%2FtopRight.svg?v=1584320715073"),
+    url("https://cdn.glitch.com/91942178-97c0-4cd1-9504-ebdf2c2f2537%2FblueCirles.svg?v=1584320714661"),
+    url("https://cdn.glitch.com/91942178-97c0-4cd1-9504-ebdf2c2f2537%2FbottomRight.svg?v=1584320714324");
+  background-repeat: no-repeat;
+  background-position: -22% -90%, 128% -70%, -30% 240%, 130% 250%;
+  background-size: 35%, 35%, 35%, 35%;
+  height: 100%;
+  position: absolute;
+}
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+button {
+  border: none;
+  background-color: #FF367C;
+  color: #FFFFFF;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 20px 45px;
+  box-shadow: rgba(255, 54, 124, 0.3) 0px 5px 7px;
+  cursor: pointer;
+  width: 15%;
+  left: 42.5%;
+  position: relative;
+  font-size: 100%;
+}
+
+#textBtn {
+  
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: #312840;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h6 {
+  font-size: 1em;
+  text-align: center;
+}
+
+#bText {
+  display: none;
+}
+
+#messages {
+  text-align: center;
+}
+
+#messages ul {
+  padding: 0;
+}
+#messages li {
+  text-decoration: none;
+  margin-bottom: 1%;
+
+  list-style-type: none;
+  padding-right: 0;
+}
+
+#messages a:hover {
+  color: #FF367C;
+  transition: 0.2s;
+}
+
+#messages a {
+  color: #000000;
+}
+
+/*.messages a[href="#"]:hover{
+  color:#423555;
+}*/
+
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:active {
+  color: #423555;
+}
+
+.personalMessage {
+  display: none;
+}
+
+#backBtn{
+  display: none;
+}
+
+.caption {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.5);
+}
