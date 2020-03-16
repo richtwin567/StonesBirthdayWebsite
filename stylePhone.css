@@ -19,7 +19,6 @@ font-family: 'Montserrat', sans-serif;
 * {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
-  line-height: 1.5;
 }
 
 body {
@@ -32,13 +31,13 @@ body {
 
 .background {
   width: 100%;
-  background-image: url("https://cdn.glitch.com/91942178-97c0-4cd1-9504-ebdf2c2f2537%2FtopLeft.svg?v=1584320714851"),
-    url("https://cdn.glitch.com/91942178-97c0-4cd1-9504-ebdf2c2f2537%2FtopRight.svg?v=1584320715073"),
-    url("https://cdn.glitch.com/91942178-97c0-4cd1-9504-ebdf2c2f2537%2FblueCirles.svg?v=1584320714661"),
-    url("https://cdn.glitch.com/91942178-97c0-4cd1-9504-ebdf2c2f2537%2FbottomRight.svg?v=1584320714324");
+  background-image: url("https://cdn.glitch.com/91942178-97c0-4cd1-9504-ebdf2c2f2537%2Fphone-tRight.svg?v=1584371750591"),
+    url("https://cdn.glitch.com/91942178-97c0-4cd1-9504-ebdf2c2f2537%2Fphone-tLeft.svg?v=1584371750467"),
+    url("https://cdn.glitch.com/91942178-97c0-4cd1-9504-ebdf2c2f2537%2Fphone-bLeft.svg?v=1584371750643"),
+    url("https://cdn.glitch.com/91942178-97c0-4cd1-9504-ebdf2c2f2537%2Fphone-bRight.svg?v=1584371750729");
   background-repeat: no-repeat;
-  background-position: -22% -10%, 127% -5%, -30% 120%, 130% 115%;
-  background-size: 35%, 35%, 35%, 35%;
+  background-position: 100% -27%, 0% 0%, -30% 122%, 130% 115%;
+  background-size: 120%, 50%, 35%, 40%;
   background-attachment: fixed;
   height: 100%;
   position: absolute;
@@ -58,13 +57,13 @@ button {
   color: #FFFFFF;
   border-radius: 20px;
   font-weight: bold;
-  padding: 10px 40px;
+  padding: 10px 10px;
   box-shadow: rgba(255, 54, 124, 0.3) 0px 5px 7px;
   cursor: pointer;
-  width: 50%;
-  left: 25%;
+  width: 40%;
+  left: 30%;
   position: relative;
-  font-size: 90%;
+  font-size: 80%;
 }
 
 #textBtn {
@@ -82,6 +81,7 @@ button:active {
 h1 {
   font-size: 1.7em;
   text-align: center;
+
 }
 
 h6 {
@@ -96,6 +96,10 @@ h6 {
 
 #messages {
   text-align: center;
+
+}
+
+#title{
 }
 
 #messages ul {
@@ -107,6 +111,7 @@ h6 {
   margin-bottom: 10%;
   list-style-type: none;
   padding-right: 0;
+  flex-basis: 10%;
 }
 
 #messages a:hover {
@@ -133,8 +138,9 @@ a:active {
   color: #423555;
 }
 
-.personalMessage {
-  display: none;
+#personalMessage {
+  padding:0;
+  margin:0;
 }
 
 #backBtn{
@@ -144,4 +150,27 @@ a:active {
 .caption {
   font-size: 0.75rem;
   color: rgba(0, 0, 0, 0.5);
+}
+
+#bImg {
+  height:25%;
+}
+
+#divBody{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+#namesList {
+   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  
 }
